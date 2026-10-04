@@ -31,6 +31,10 @@
             comboBox1 = new ComboBox();
             button1 = new Button();
             checkBox1 = new CheckBox();
+            checkedListBox1 = new CheckedListBox();
+            checkedListBox2 = new CheckedListBox();
+            colorDialog1 = new ColorDialog();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // comboBox1
@@ -60,11 +64,37 @@
             checkBox1.Text = "checkBox1";
             checkBox1.UseVisualStyleBackColor = true;
             // 
+            // checkedListBox1
+            // 
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Location = new Point(401, 199);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(150, 114);
+            checkedListBox1.TabIndex = 3;
+            // 
+            // checkedListBox2
+            // 
+            checkedListBox2.FormattingEnabled = true;
+            checkedListBox2.Location = new Point(587, 76);
+            checkedListBox2.Name = "checkedListBox2";
+            checkedListBox2.Size = new Size(150, 114);
+            checkedListBox2.TabIndex = 4;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(167, 327);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(checkedListBox2);
+            Controls.Add(checkedListBox1);
             Controls.Add(checkBox1);
             Controls.Add(button1);
             Controls.Add(comboBox1);
@@ -79,5 +109,9 @@
         private ComboBox comboBox1;
         private Button button1;
         private CheckBox checkBox1;
+        private CheckedListBox checkedListBox1;
+        private CheckedListBox checkedListBox2;
+        private ColorDialog colorDialog1;
+        private DateTimePicker dateTimePicker1;
     }
 }
