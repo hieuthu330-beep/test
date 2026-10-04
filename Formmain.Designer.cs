@@ -31,6 +31,7 @@
             button1 = new Button();
             checkBox1 = new CheckBox();
             checkedListBox1 = new CheckedListBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
@@ -60,11 +61,21 @@
             checkedListBox1.Size = new Size(150, 114);
             checkedListBox1.TabIndex = 2;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(373, 245);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 3;
+            label1.Text = "label1";
+            // 
             // Formmain
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(checkedListBox1);
             Controls.Add(checkBox1);
             Controls.Add(button1);
@@ -79,5 +90,6 @@
         private Button button1;
         private CheckBox checkBox1;
         private CheckedListBox checkedListBox1;
+        private Label label1;
     }
 }
