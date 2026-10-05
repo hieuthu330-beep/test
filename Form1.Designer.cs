@@ -91,9 +91,11 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Times New Roman", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Red;
             label1.Location = new Point(194, 20);
             label1.Name = "label1";
-            label1.Size = new Size(93, 20);
+            label1.Size = new Size(467, 90);
             label1.TabIndex = 6;
             label1.Text = "Hieudepzaiii";
             label1.Click += label1_Click;
