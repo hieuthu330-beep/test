@@ -35,6 +35,7 @@
             checkedListBox2 = new CheckedListBox();
             colorDialog1 = new ColorDialog();
             dateTimePicker1 = new DateTimePicker();
+            label1 = new Label();
             SuspendLayout();
             // 
             // comboBox1
@@ -87,11 +88,22 @@
             dateTimePicker1.Size = new Size(250, 27);
             dateTimePicker1.TabIndex = 5;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(194, 20);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 20);
+            label1.TabIndex = 6;
+            label1.Text = "Hieudepzaiii";
+            label1.Click += label1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(dateTimePicker1);
             Controls.Add(checkedListBox2);
             Controls.Add(checkedListBox1);
@@ -113,5 +125,6 @@
         private CheckedListBox checkedListBox2;
         private ColorDialog colorDialog1;
         private DateTimePicker dateTimePicker1;
+        private Label label1;
     }
 }
