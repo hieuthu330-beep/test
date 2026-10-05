@@ -36,6 +36,8 @@
             colorDialog1 = new ColorDialog();
             dateTimePicker1 = new DateTimePicker();
             label1 = new Label();
+            button2 = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // comboBox1
@@ -100,11 +102,31 @@
             label1.Text = "Hieudepzaiii";
             label1.Click += label1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(405, 165);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 7;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(216, 150);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 29);
+            button3.TabIndex = 8;
+            button3.Text = "button3";
+            button3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(dateTimePicker1);
             Controls.Add(checkedListBox2);
@@ -128,5 +150,7 @@
         private ColorDialog colorDialog1;
         private DateTimePicker dateTimePicker1;
         private Label label1;
+        private Button button2;
+        private Button button3;
     }
 }
